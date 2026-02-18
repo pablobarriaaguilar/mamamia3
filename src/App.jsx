@@ -6,6 +6,7 @@ import Home from './components/Home'
 import Nav from './components/Nav'
 import Formulario from './components/Formulario'
 import Login from './components/Login'
+import Cart from './components/Cart'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,15 +17,14 @@ function App() {
     <>
         <Nav />
         <div>
-     {/* <Home /> */}
+ {/* <Home /> */}
       </div>
-<div className="container my-5 border border-dark"><Formulario /></div>
-
-<div className="container my-5 border border-dark"><Login/></div>
 
 
+{/* <RegisterPage /> */}
+{/* <LoginPage /> */}
 
-
+<Cart />
       <div>
 
         <Footer />

@@ -1,4 +1,4 @@
-const CardPizza = ({name, price, ingredients, img}) =>{
+const CardPizza = ({name, price, ingredients, img, descripcion}) =>{
     return (
       <div className="card">
   <img src={img} className="card-img-top" alt={name} />
@@ -11,6 +11,7 @@ const CardPizza = ({name, price, ingredients, img}) =>{
             <li key={ingrediente}>🍕 {ingrediente}</li>
           ))}
         </ul>
+        <p className="card-text">Descripción: {descripcion}</p>
         <hr />
         <h4>Precio: ${price.toLocaleString('es-CL')}</h4>
         <div className="d-flex justify-content-around">
